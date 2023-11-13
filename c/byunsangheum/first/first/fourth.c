@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include "fourth.h"
 
-
 void fourth_function(void)
 {
-	int number = 7;
-	printf("숫자 = %d\n", number);
+	printf("숫자 = %d", 7);
 }
