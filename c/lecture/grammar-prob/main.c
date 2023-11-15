@@ -6,6 +6,9 @@
 #include "2/grammar_prob_second.h"
 #include "extra/i_wanna_return_float_random.h"
 #include "3/grammar_prob_third.h"
+#include "4/grammar_prob_fourth.h"
+#include "5/grammar_prob_fifth.h"
+#include "6/grammar_prob_sixth.h"
 
 int main (void)
 {
@@ -30,6 +33,15 @@ int main (void)
     print_random_number_and_alloc_to_global(); // <- 3번을 위한 2번 추가 가변
     print_number_if_even(
         get_allocated_global_random_number());
+
+    // 4 번 문제.
+    print_start_to_finish(3, 20);
+
+    // 5 번 문제.
+    print_integer_from_parameter(7);
+
+    // 6 번 문제.
+    printf("6. result = %d\n", return_from_transfer_two_parameter(3, 7));
 
     return 0;
 }
